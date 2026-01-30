@@ -36,7 +36,7 @@ result = "True" if num1 == num4 else "False"
 print("Is num1 equal to num4?", result)
 print()
 result = "True" if num2 == num4 else "False"
-print("Is num1 equal to num4?", result)
+print("Is num2 equal to num4?", result)
 
 
 
