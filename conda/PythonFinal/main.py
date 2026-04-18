@@ -1,19 +1,16 @@
 from nwsclient import NWSClient
 from forecast import Forecast
 from visual import NWSVisual
-from config import Config
 
 def main():
     client = NWSClient()
 
-    forecast_url = client.get_forecast_url()
+    forecast = client.get_forecast()
 
-    raw_forecast = client.get_forecast(forecast_url)
+    forecast_refined = Forecast(forecast)
+    labels, temps = forecast_refined.get_labels_and_temps()
 
-    forecast = Forecast(raw_forecast)
-    labels, temps = forecast.get_labels_and_temps()
-
-    for period in forecast.periods:
+    for period in forecast_refined.periods:
         print(period)
 
     visualizer = NWSVisual()

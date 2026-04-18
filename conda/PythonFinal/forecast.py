@@ -11,9 +11,8 @@ class Forecast:
         self.periods = self._parse(raw_data)
 
     def _parse(self, raw_data):
-        periods = raw_data["properties"]["periods"]
 
-        day_periods = [p for p in periods if p["isDaytime"]][:7]
+        day_periods = [p for p in raw_data if p["isDaytime"]][:7]
 
         return [
             ForecastPeriod(p["name"], p["temperature"])
