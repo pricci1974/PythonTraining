@@ -1,3 +1,17 @@
 Final Project in Python Programming
 Program returns weather forecast for Rochester NY from the National Weather Service
 API.
+The following files are included with this package:
+config.py
+forecast.py
+main.py
+nwsclient.py
+visual.py
+
+To install:
+Simply unzip the package in the directory of your choice. Keep all the files in the same directory
+
+To run:
+must have Python3 installed prior to operating.
+from the command line, type: python3 main.py
+
