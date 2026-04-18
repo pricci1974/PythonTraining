@@ -1,3 +1,5 @@
+# This produces a bar graph to display the temperature
+# It is saved in a jpg format
 import matplotlib.pyplot as plt
 
 
@@ -7,7 +9,7 @@ class NWSVisual:
 
         plt.bar(labels, temps)
 
-        plt.title("7 Day Forecast (Temperature °F)")
+        plt.title("Rochester, NY 7 Day Temperature Forecast")
         plt.xlabel("Day")
         plt.ylabel("Temperature °F")
         plt.xticks(rotation=45)
