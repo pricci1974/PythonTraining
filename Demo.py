@@ -1,5 +1,8 @@
-class Car:
-    def __init__(self, color):
-        self.color = color
-mycar = Car("red")
-print(mycar.color)
+
+def add(a, b):
+    return a + b
+
+
+print(add(2,3) == 5)
+
+    
